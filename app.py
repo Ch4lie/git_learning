@@ -133,7 +133,7 @@ async def _sitemap(request):
 
 @app.route('sitemap.xml')
 async def sitemap(request):
-    return HTTPResponse(await _sitemap(request), status=200, headers=None,
+  return HTTPResponse(await _sitemap(request), status=200, headers=None,
                         content_type="text/xml")
 
 
